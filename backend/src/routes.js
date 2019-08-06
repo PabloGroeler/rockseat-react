@@ -9,6 +9,7 @@ routes.get('/', (req, res) => {
     return res.json({ message: `Hello ${req.query.name} Groeler` })
 });
 
+routes.get('/devs', DevController.index)
 routes.post('/devs', DevController.store);
 
 routes.post('/devs/:devId/likes', LikeController.store);
