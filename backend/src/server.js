@@ -12,7 +12,7 @@ io.on('connection', socket => {
     console.log('Nova conexão', socket.id)
 });
 
-mongoose.connect('mongodb+srv://pablogroeler:groeler1@cluster0-3l9so.mongodb.net/omnistack8?retryWrites=true&w=majority', {
+mongoose.connect('', { // FIX connect
     useNewUrlParser: true
 });
 
